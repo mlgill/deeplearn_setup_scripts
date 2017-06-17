@@ -105,6 +105,7 @@ WantedBy=multi-user.target' | sudo tee /lib/systemd/system/x11vnc.service
 	nvidia-smi
 	echo "export PATH=\"/usr/local/cuda/bin:\$PATH\"" >> $HOME/$shellrc
 	export PATH="/usr/local/cuda/bin:$PATH"
+	sudo apt-get -y install nvidia-cuda-toolkit
 
 	# sudo ln -s -f /usr/local/cuda-8.0/targets/x86_64-linux/include/* /usr/local/cuda/include/
 
